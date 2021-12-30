@@ -1,0 +1,130 @@
+
+
+export const shopItems = [
+  {
+    id: 1,
+    name: 'Puma "Ralph Sampson" 70 low archive sneakers',
+    price: 100,
+    img: "./Items/item1.jpg",
+  },
+  {
+    id: 2,
+    name: 'Jordan 4 Retro University Blue sneakers',
+    price: 59.99,
+    img: './Items/item2.jpg',
+  },
+  {
+    id: 3,
+    name: 'Yeezy Boost 350 V2 sneakers',
+    price: 100,
+    img: "./Items/item3.jpg",
+  },
+  {
+    id: 4,
+    name: 'Puma "Wild Rider" rollin sneakers',
+    price: 85.99,
+    img: "./Items/item4.jpg",
+  },
+  {
+    id: 5,
+    name: 'Yeezy 450 sneakers',
+    price: 80.99,
+    img: './Items/item5.jpg',
+  },
+  {
+    id: 6,
+    name: 'Asics Gel-Nimbus 22 shoes',
+    price: 99.99,
+    img: './Items/item6.jpg',
+  },
+  {
+    id: 7,
+    name: 'Vans Sk8-Hi classic sneakers',
+    price: 67.99,
+    img: './Items/item7.jpg',
+  },
+  {
+    id: 8,
+    name: 'New Balance 2002R sneakers',
+    price: 100,
+    img: './Items/item8.jpg',
+  },
+  {
+    id: 9,
+    name: 'New Balance 992 sneakers',
+    price: 100,
+    img: './Items/item9.jpg',
+  },
+  {
+    id: 10,
+    name: 'Reebok Classic leather legacy shoes',
+    price: 38.0,
+    img: './Items/item10.jpg',
+  },
+  {
+    id: 11,
+    name: 'Nike "Killshot 2" sneakers',
+    price: 100,
+    img: './Items/item11.jpg',
+  },
+  {
+    id: 12,
+    name: 'Salomon RX Snow Moc 2 advanced sneakers',
+    price: 55.99,
+    img: './Items/item12.jpg',
+  },
+  {
+    id: 13,
+    name: 'Veja "Campo" leather sneakers',
+    price: 65.99,
+    img: './Items/item13.jpg',
+  },
+  {
+    id: 14,
+    name: 'Nike "Blazer" mid -77 vintage sneakers',
+    price: 60.99,
+    img: './Items/item14.jpg',
+  },
+  {
+    id: 15,
+    name: 'Saucony "Grid Azura" 2000 sneakers',
+    price: 40.99,
+    img: './Items/item15.jpg',
+  },
+  {
+    id: 16,
+    name: 'Puma "Mirage Mox" sneakers',
+    price: 50.99,
+    img: './Items/item16.jpg',
+  },
+  {
+    id: 17,
+    name: 'Nike Air Force 1-07 sneakers',
+    price: 30.99,
+    img: './Items/item17.jpg',
+  },
+  {
+    id: 19,
+    name: 'Vans OG "Epoch" LX suede sneakers',
+    price: 55.99,
+    img: './Items/item19.jpg',
+  },
+  {
+    id: 18,
+    name: 'Converse "Jack Purcell" sneakers',
+    price: 20.99,
+    img: './Items/item18.jpg',
+  },
+  {
+    id: 20,
+    name: 'Nike "Cortez" sneakers',
+    price: 44.99,
+    img: './Items/item20.jpg',
+  },
+  {
+    id: 21,
+    name: 'Converse CONS "Louie Lopez" pro sneakers',
+    price: 100.99,
+    img: './Items/item21.jpg',
+  },
+];
