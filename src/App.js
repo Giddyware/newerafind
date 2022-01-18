@@ -1,7 +1,7 @@
-import { useContext, useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.scss';
 import Backdrop from './Backdrop/Backdrop';
-import CartContext from './context/cart/CartContext';
+
 import Header from './Header/Header';
 import HomePage from './HomePage/HomePage';
 import SideDrawer from './SideDrawer/SideDrawer';
