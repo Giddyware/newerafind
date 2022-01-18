@@ -4,8 +4,8 @@ import CartContext from '../context/cart/CartContext';
 
 import './Header.scss';
 
-const Header = () => {
-  const { cartItems } = useContext(CartContext);
+const Header = ({ onClick }) => {
+  const { carts } = useContext(CartContext);
 
   return (
     <div className="header">
@@ -14,22 +14,8 @@ const Header = () => {
       </div>
       <div className="right">
         <h2>Shop</h2>
-        <img
-          src={cartIcon}
-          alt="cart"
-          onClick={() => {
-            {
-              cartItems.map((p) => (
-                <div className="cart">
-                 <img src={p.img} alt='Item Image'/>
-                  {p.name}
-                 
-                </div>
-              ));
-            }
-          }}
-        />
-        {cartItems.length > 0 && <sup>{cartItems.length}</sup>}
+        <img onClick={onClick} src={cartIcon} alt="cart" />
+        {carts.length > 0 && <sup>{carts.length}</sup>}
       </div>
     </div>
   );

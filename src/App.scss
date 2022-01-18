@@ -1,0 +1,28 @@
+
+.app h1 {
+  font-weight: 400;
+  font-family: 'Waterfall', cursive;
+}
+
+.app {
+  .expand {
+    transition: all ease-in-out 0.3s;
+    right: 0;
+  }
+  .shrink {
+    transition: all ease-in-out 0.3s;
+    right: -400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    row-gap: 30px;
+    padding: 3rem 0;
+    grid-column-gap: 0;
+    -webkit-column-gap: 0;
+    column-gap: 0;
+  }
+}

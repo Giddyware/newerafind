@@ -1,11 +1,9 @@
-
-
 export const shopItems = [
   {
     id: 1,
     name: 'Puma "Ralph Sampson" 70 low archive sneakers',
     price: 100,
-    img: "./Items/item1.jpg",
+    img: './Items/item1.jpg',
   },
   {
     id: 2,
@@ -17,13 +15,13 @@ export const shopItems = [
     id: 3,
     name: 'Yeezy Boost 350 V2 sneakers',
     price: 100,
-    img: "./Items/item3.jpg",
+    img: './Items/item3.jpg',
   },
   {
     id: 4,
     name: 'Puma "Wild Rider" rollin sneakers',
     price: 85.99,
-    img: "./Items/item4.jpg",
+    img: './Items/item4.jpg',
   },
   {
     id: 5,

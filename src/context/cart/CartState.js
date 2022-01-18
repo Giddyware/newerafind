@@ -1,35 +1,29 @@
 import { useReducer } from 'react';
+import { shopItems } from '../../shopItems';
 
 import CartContext from './CartContext';
+
 import CartReducer from './CartReducer';
-import { ADD_TO_CART, REMOVE_FROM_CART, SHOW_HIDE_CART } from './CartTypes';
+import { ADD_TO_CART, REMOVE_FROM_CART } from './CartTypes';
 
 const CartState = ({ children }) => {
-  const initialState = { showCart: false, cartItems: [] };
+  const [state, dispatch] = useReducer(CartReducer, { carts: [] });
 
-  const [state, dispatch] = useReducer(CartReducer, initialState);
-
-  const addToCart = (item) => {
-    dispatch({ type: ADD_TO_CART, payload: item });
+  const addProductToCart = (product) => {
+    dispatch({ type: ADD_TO_CART, payload: product });
   };
 
-  const showHideCart = () => {
-    dispatch({ type: SHOW_HIDE_CART });
-  };
-
-  const removeItem = (id) => {
-    dispatch({ type: REMOVE_FROM_CART, payload: id });
+  const removeProductFromCart = (productId) => {
+    dispatch({ type: REMOVE_FROM_CART, payload: productId });
   };
 
   return (
     <CartContext.Provider
       value={{
-        showCart: state.showCart,
-        cartItems: state.cartItems,
-        
-        addToCart,
-        showHideCart,
-        removeItem,
+        products: shopItems,
+        carts: state.carts,
+        addProductToCart,
+        removeProductFromCart,
       }}
     >
       {children}

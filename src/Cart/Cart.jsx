@@ -14,7 +14,7 @@ const Cart = () => {
            <div className="cartInnerWrapper">
                {cartItems.length === 0? (<h4>Cart is Empty</h4>):(
                    <ul>
-                       {cartItems.map(item=>(CartItem))}
+                       {cartItems.map(item=>(cartItems))}
                    </ul>
                )}
            </div>
