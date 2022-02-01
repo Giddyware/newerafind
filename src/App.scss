@@ -1,7 +1,11 @@
-
 .app h1 {
   font-weight: 400;
   font-family: 'Waterfall', cursive;
+  font-size: 45px;
+  // line-height: 3.5em;
+  padding-bottom: 12px;
+  background: whitesmoke;
+  background-color: transparent;
 }
 
 .app {
@@ -12,6 +16,11 @@
   .shrink {
     transition: all ease-in-out 0.3s;
     right: -400px;
+  }
+  .disable {
+    // background-attachment: fixed;
+    overflow: hidden;
+    height: 100%;
   }
 }
 

@@ -2,7 +2,7 @@ export const shopItems = [
   {
     id: 1,
     name: 'Puma "Ralph Sampson" 70 low archive sneakers',
-    price: 100,
+    price: 99.99,
     img: './Items/item1.jpg',
   },
   {
@@ -14,7 +14,7 @@ export const shopItems = [
   {
     id: 3,
     name: 'Yeezy Boost 350 V2 sneakers',
-    price: 100,
+    price: 99.99,
     img: './Items/item3.jpg',
   },
   {
@@ -44,25 +44,25 @@ export const shopItems = [
   {
     id: 8,
     name: 'New Balance 2002R sneakers',
-    price: 100,
+    price: 99.99,
     img: './Items/item8.jpg',
   },
   {
     id: 9,
     name: 'New Balance 992 sneakers',
-    price: 100,
+    price: 99.99,
     img: './Items/item9.jpg',
   },
   {
     id: 10,
     name: 'Reebok Classic leather legacy shoes',
-    price: 38.0,
+    price: 38.10,
     img: './Items/item10.jpg',
   },
   {
     id: 11,
     name: 'Nike "Killshot 2" sneakers',
-    price: 100,
+    price: 99.99,
     img: './Items/item11.jpg',
   },
   {
@@ -122,7 +122,7 @@ export const shopItems = [
   {
     id: 21,
     name: 'Converse CONS "Louie Lopez" pro sneakers',
-    price: 100.99,
+    price: 68.99,
     img: './Items/item21.jpg',
   },
 ];

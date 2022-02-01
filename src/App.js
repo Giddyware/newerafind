@@ -10,16 +10,24 @@ function App() {
   const [isToggle, setToggle] = useState(false);
 
   const handleCartToggle = () => {
+    if (isToggle !== true) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    console.log(isToggle);
     setToggle((prev) => !prev);
   };
+
   return (
     <div className="app" style={{ height: '100%' }}>
       <Header onClick={handleCartToggle} />
-      <div onClick={handleCartToggle}>
-        <SideDrawer isToggle={isToggle} />
-        {isToggle && <Backdrop />}
-      </div>
-      <HomePage />
+
+      <SideDrawer isToggle={isToggle} onClick={handleCartToggle} />
+      <>
+        {isToggle && <Backdrop onClick={handleCartToggle} />}
+        <HomePage />
+      </>
     </div>
   );
 }

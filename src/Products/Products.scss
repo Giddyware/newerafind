@@ -1,8 +1,23 @@
-.products{
-    background-color: #E2E6E3;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.products {
+  // background-color: #E2E6E3;
+  // background-color: #c2c9ce;
+ 
+  background-image: linear-gradient(to right, #e8d5d9, #f0e9eb, #c5d9ed);
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100vw
+}
+@media screen and (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-
+@media screen and (max-width: 360px) {
+  .products {
+   
+    grid-template-columns: repeat(1, 1fr);
+    padding-right: 50px;
+  }
+}

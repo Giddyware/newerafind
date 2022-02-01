@@ -17,7 +17,7 @@ const SingleProduct = ({ product }) => {
           <li>{product.name}</li>
         </div>
         <div className="product-price">
-          <h4>{product.price}</h4>
+          <h4>£{product.price}</h4>
         </div>
 
         <div className="btns">

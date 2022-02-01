@@ -6,10 +6,14 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  width: 1300px;
-  margin: 0 10px;
+  width: 100%;
+
   height: 65px;
   background-image: linear-gradient(45deg, #fcf3f5, #f9f3f5, #f7f9fb);
+
+  box-shadow: 1px 15px 37px 0px rgba(167,159,159,0.61);
+  -webkit-box-shadow: 1px 15px 37px 0px rgba(167,159,159,0.61);
+  -moz-box-shadow: 1px 15px 37px 0px rgba(167,159,159,0.61);
   h2 {
     font-weight: 400;
     font-size: 16px;

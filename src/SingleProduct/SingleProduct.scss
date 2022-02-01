@@ -1,22 +1,10 @@
 .card {
-  // margin: 20px auto;
-  // width: 80%;
-  // display: flex;
-  // // flex-direction: row;
-  // // justify-content: space-around;
-  // flex-wrap: wrap;
-  // border-radius: 5px;
-  // padding-top: 50px;
-  // // align-items: center;
-  // justify-content: center;
-  // align-items: center;
   text-align: center;
   display: grid;
   padding: 3rem 60px;
+  justify-content: center;
+  align-items: center;
   .image-holder {
-    // max-width: 300px;
-    // max-height: 200px;
-    // border-radius: 10px;
     justify-content: center;
     align-items: center;
     img {
@@ -36,7 +24,6 @@
     line-height: 30px;
   }
   li {
-    // font-size: 16px;
     text-align: center;
     list-style: none;
   }
@@ -67,5 +54,12 @@
     button:hover {
       background-color: whitesmoke;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    justify-content: center;
+    align-items: center;
   }
 }

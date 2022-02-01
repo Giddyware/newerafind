@@ -1,16 +1,17 @@
 .homePage {
+  margin-top: 110px;
+  font-family: 'Rajdhani', sans-serif;
+ 
+
   .mainHeading {
-    padding-top: 60px;
-    padding-left: 60px;
-    font-family: 'Rajdhani', sans-serif;
+    padding-left: 3.75rem;
     font-weight: 500;
-    font-size: 60px;
+    font-size: 3.75rem;
   }
   .otherText {
-    padding: 0 60px;
-    font-family: 'Rajdhani', sans-serif;
+    padding: 0 3.75rem;
     font-weight: 300;
-    font-size: 23px;
-    margin-bottom: 80px;
+    font-size: 1.4375rem;
+    margin-bottom: 120px;
   }
 }
