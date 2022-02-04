@@ -15,7 +15,7 @@ function App() {
     } else {
       document.body.style.overflow = 'unset';
     }
-    console.log(isToggle);
+   
     setToggle((prev) => !prev);
   };
 

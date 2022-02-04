@@ -4,7 +4,7 @@ import { shopItems } from '../../shopItems';
 import CartContext from './CartContext';
 
 import CartReducer from './CartReducer';
-import { ADD_TO_CART, REMOVE_FROM_CART } from './CartTypes';
+import { ADD_TO_CART, DELETE_FROM_CART, REMOVE_FROM_CART } from './CartTypes';
 
 const CartState = ({ children }) => {
   const [state, dispatch] = useReducer(CartReducer, { carts: [] });
@@ -17,6 +17,10 @@ const CartState = ({ children }) => {
     dispatch({ type: REMOVE_FROM_CART, payload: productId });
   };
 
+  const deleteProductFromCart = (productId) => {
+    dispatch({ type: DELETE_FROM_CART, payload: productId });
+  };
+
   return (
     <CartContext.Provider
       value={{
@@ -24,6 +28,7 @@ const CartState = ({ children }) => {
         carts: state.carts,
         addProductToCart,
         removeProductFromCart,
+        deleteProductFromCart,
       }}
     >
       {children}

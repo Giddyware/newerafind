@@ -41,8 +41,8 @@
   .card {
     height: 570px;
     // height: 100%;
-    overflow: scroll;
-    
+    overflow-y: scroll;
+    overflow-x: hidden;
 
     .cartitem {
       align-items: center;
@@ -51,7 +51,7 @@
       padding: 15px;
       margin-bottom: 20px;
       // min-height: 180px;
-      height:auto;
+      height: auto;
       // position: relative;
       // display: flex;
       overflow: height;

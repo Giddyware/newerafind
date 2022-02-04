@@ -5,7 +5,7 @@ import CartContext from '../context/cart/CartContext';
 import './SideDrawer.scss';
 
 const SideDrawer = ({ isToggle, open }) => {
-  const { addProductToCart, removeProductFromCart, carts } =
+  const { addProductToCart, removeProductFromCart,deleteProductFromCart, carts } =
     useContext(CartContext);
 
   const [total, setTotal] = useState();
@@ -29,7 +29,7 @@ const SideDrawer = ({ isToggle, open }) => {
           <div className="cartitem" key={prod.id}>
             <button
               className="close-icon"
-              onClick={() => removeProductFromCart(prod.id)}
+              onClick={() => deleteProductFromCart(prod.id)}
             >
               X
             </button>

@@ -1,4 +1,4 @@
-import { ADD_TO_CART, REMOVE_FROM_CART } from './CartTypes';
+import { ADD_TO_CART, REMOVE_FROM_CART, DELETE_FROM_CART } from './CartTypes';
 
 const addProductToCart = (state, product) => {
   let copy = [...state.carts];
@@ -32,7 +32,6 @@ const removeProductFromCart = (state, productId) => {
 
   const curItem = { ...copy[curItemIndex] };
   curItem.quantity--;
-
   if (curItem.quantity <= 0) {
     copy.splice(curItemIndex, 1);
   } else {
@@ -40,6 +39,14 @@ const removeProductFromCart = (state, productId) => {
   }
 
   return { ...state, carts: copy };
+};
+const deleteProductFromCart = (state, productId) => {
+  const copy = [...state.carts];
+
+  const cartFiltered = copy.filter((i) => i.id !== productId);
+ 
+
+  return { ...state, carts:cartFiltered };
 };
 
 const CartReducer = (state, action) => {
@@ -49,6 +56,9 @@ const CartReducer = (state, action) => {
     }
     case REMOVE_FROM_CART: {
       return removeProductFromCart(state, action.payload);
+    }
+    case DELETE_FROM_CART: {
+      return deleteProductFromCart(state, action.payload);
     }
     default:
       return state;
